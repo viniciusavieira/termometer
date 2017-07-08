@@ -1,6 +1,7 @@
 # README #
 
-Scup Fale Mais.
+Termometro / Barra de desconto Simples em React.
+Calculo com regra simples de 3 e posicionamento basedo no tamanho do pai.
 
 Deve ter Node 6.0 ou superior instalado.
 Esse projeto não utiliza o reactServer portanto é necessário instalar algum programa para localhost, recomendo Xampp(https://www.apachefriends.org/pt_br/).
