@@ -97,7 +97,7 @@ dt {
 		display: inline-block;
 		width: 16px;
 		height: 16px;
-		background: transparent url("assets/icon_edit_user_hover.svg") 0px 0px no-repeat;
+		background-color: red;
 		background-size: 16px 16px;
 	}
 	span{
@@ -200,7 +200,7 @@ a:hover{
 
 .icon-close {
 	display: inline-block;
-	background: transparent url(assets/close_red.svg) center center no-repeat;
+	background-color: grey;
 	width: 8px;
 	height: 8px;
 	background-size: 8px 8px;
@@ -209,14 +209,6 @@ a:hover{
     -ms-transform: rotate(45deg);   /* IE 9 */
     -o-transform: rotate(45deg);   /* Opera */
     transform: rotate(45deg);
-}
-
-.icon-add {
-	display: inline-block;
-	background: transparent url(assets/add_blue.svg) center center no-repeat;
-	width: 8px;
-	height: 8px;
-	background-size: 8px 8px;
 }
 
 .tal{
@@ -430,7 +422,7 @@ input[type="radio"]:focus + label::before  {
 		text-align: left;
 		color: #000000;
 	}
-	
+
 }
 
 .container-loading {
@@ -456,13 +448,6 @@ input[type="radio"]:focus + label::before  {
 	font-size: 12px;
 	font-family: "Montserrat",sans-serif;
 	color: #000000;
-	.empty-icon {
-		width: 40px;
-		height: 40px;
-		margin: 15px auto 30px auto;
-		background: transparent url("assets/icon_sad.svg") center center no-repeat;
-		background-size: 40px;
-	}
 }
 
 .box-history{

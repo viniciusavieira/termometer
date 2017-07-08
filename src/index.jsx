@@ -8,8 +8,8 @@ import Home from "javascripts/view/home/Home";
 
 function startApp(){
 	render((
-		<Router baseName="/scup" history={browserHistory}>
-			<Route path="/scup" component={App} onChange={App.onRouteChange}>
+		<Router baseName="/termometer" history={browserHistory}>
+			<Route path="/termometer" component={App} onChange={App.onRouteChange}>
 				<Route path="home" component={Home}/>
 				<Route path="*" component={NotFound} />
 			</Route>

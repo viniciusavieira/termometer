@@ -18,12 +18,16 @@ Se estiver em IOS/Mac:
 Após compilado será gerado o projeto na pasta build.
 
 Para compilar o projeto pela primeira vez em abiente de desenvolvimento com as bibliotecas: npm run compile
+
 Para compilar o projeto em abiente de desenvolvimento sem as bibliotecas, compilação rápida somente com códigos da pasta src: npm run dev
+
 Para compilar o projeto para deploy em produção: npm run deploy
 
 Você pode colocar o conteudo do projeto diretamente na pasta de seu localhost ou configurar seu server XAMPP para ler da pasta de sua prefrência:
+
 Mapeie o endereço da pasta do XAMPP para a pasta onde clonou o repositório, abra o arquivo navegando na interface do XAMPP: XAMPP->Apache->Config->Apache->httpd.conf
 Substitua as linhas:
+
 DocumentRoot "C:/xampp/localweb"
 <Directory "C:/xampp/localweb">
 

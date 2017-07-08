@@ -1,6 +1,5 @@
 import React from 'react';
 import { browserHistory, Router, Route, IndexRoute, Link } from 'react-router';
-import ModalContainer from 'javascripts/ModalContainer';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'stylesheets/base.scss';
 
@@ -11,37 +10,20 @@ class App extends React.Component {
 
 	constructor(){
 		super();
-		App.BASEPATH = "scup/";
+		App.BASEPATH = "termometer/";
 
 	}
-
 	componentDidMount()
 	{
 		App.ModalContainer =  this.refs.modalContainer;
 	}
-
-	static onRouteChange()
-	{
-		App.hideModal();
-	}
-
-	static showModal()
-	{
-		App.ModalContainer.show();
-	}
-
-	static hideModal()
-	{
-		App.ModalContainer.hide();
-	}
-
 	static changeRoute(routeString, replace)
 	{
 		if(replace)
 		{
-			browserHistory.replace("/scup/"+routeString);
+			browserHistory.replace("/"+App.BASEPATH+"/"+routeString);
 		}else{
-			browserHistory.push("/scup/"+routeString);
+			browserHistory.push("/"+App.BASEPATH+"/"+routeString);
 		}
 	}
 
@@ -52,7 +34,6 @@ class App extends React.Component {
 				<div className="children">
 						{this.props.children}
 				</div>
-				<ModalContainer ref="modalContainer"/>
 			</div>
 		);
 	}
